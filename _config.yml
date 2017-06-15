@@ -48,7 +48,7 @@ me-img: "https://github.com/Jaytex.png"
 
 # Books, the ISBN could also be a AISN since this hooks to Amazon anyway
 books:
-  - title: "A brief history of time"
+  - title: "A Brief History of Time"
     isbn: 0553380168
   - title: Nikola Tesla
     isbn: B00CATSONE
@@ -56,9 +56,9 @@ books:
     isbn: 1421585146
   - title: "Digital Fortress"
     isbn: 0312944926
-  - title: "Surely, you're joking Mr. Feynman"
+  - title: "Surely You're Joking, Mr. Feynman"
     isbn: 0393316041
-  - title: "The art of war"
+  - title: "The Art of War"
     isbn: 0486425576
 # Footer settings
 footer:

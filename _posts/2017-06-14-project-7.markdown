@@ -5,7 +5,7 @@ title: Genysis
 date: 2017-06-14
 img: genysis_logo_alt.jpeg
 alt: image-alt
-project-date: May 2015
+project-date: November 2016
 category: Product and Development
 ---
 
