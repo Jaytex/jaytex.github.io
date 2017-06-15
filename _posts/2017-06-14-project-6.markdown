@@ -1,0 +1,80 @@
+---
+layout: default
+modal-id: 6
+title: Orbit
+date: 2017-06-14
+img: orbit_logo.png
+alt: image-alt
+project-date: May 2015
+category: Product and Development
+---
+
+<p>I co-founded Orbit.co, along with <a data-rt-link-type="external" href="https://richardyangux.myportfolio.com/projects">Richard Yang</a> and a few other colleagues from the University of Waterloo, and within a year of starting it, we were able to make it to the final of the <a href="http://velocity.uwaterloo.ca/2016/11/announcing-the-velocity-fund-f16-25k-finalists/">Velocity 25k pitch competition </a>(didn't win tho ... ) . </p>
+
+<h1>About</h1>
+
+<p>Orbit aims to be an interactive advertising platform that allows taxi passengers to interact and engage with different forms of digital advertisement. It is based in South Korea, since our research showed that would be the best
+market to launch in.</p>
+
+<p>The ads are uploaded by people/businesses&nbsp;who sign onto our platform, and are viewed on tablets attached to the back of the seats by the passengers in the taxis. Our platform will contain an online portal where people can upload their ads, and choose certain parameters to associate with those ads (e.g time to display ad, locations to display ad in, we even allow weather!). These parameters can be fed back into our platform, allowing us to leverage Machine Learning and Data Science to make better suggestion on what combination of parameters will yield the maximum return on investment for our customers (i.e the people and businesses). </p>
+
+<p>Below I discuss my contributions to the company.</p>
+
+<h1>My Role</h1>
+
+<p>I was (one of) the CPO at Orbit. My main focus was on the tablets that were in the taxis, from the features we should implement (product), to how it queries our server and plays ads based on the parameters (development). I was the only developer on the tablet portion, however my work regarding to server side communication was made easy, thanks to the CTO (Tyler Zhang), who made nice RESTful APIs to query from.</p>
+
+<h2>Product </h2>
+
+<p>As one of the 5 founders, I found myself heavily involved in the product roadmap and vision. Richard and I had an interesting dynamic going on where we were both "co-CPO"s with additional responsibilities. So while we both tackled the product development, his other time was spent on the product design, and mine was on the product development. We had worked on a couple of projects together by this point, so we knew this was the right way to go for us.</p>
+
+<p>This combination has proven useful since it streamlines well with both the design of the product and the technical limitations (i.e. we know if something is technically feasible and has good UX).</p>
+
+<p>One of my main contributions was the addition of "coupons" into the advertising experience. QR codes containing coupons for certain stores would be available after each, which allowed the passengers to have incentive to interact with the tablets more.</p>
+
+<figure>
+<div>
+<img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/593f4f66e252c863257909e9_orbit1.png">
+</div>
+</figure>
+
+<p>Another feature I contributed to after long talk with Richard, was the concept of having the content on our dashboard "flicker". That way we can showcase more of the ads we have, and it can tie into our business model as well, if a customer pay more, we have their content show up more frequently (assigning more weight to their campaign).</p>
+
+<figure>
+<div>
+<img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/593f511a7ac55b34a33f9ce2_orbit2.png">
+</div>
+<figcaption>Initial View of the UI</figcaption>
+</figure>
+
+<h5>&nbsp;</h5>
+
+<figure>
+<div>
+<img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/59405a28a3c1852eb1ea39c0_orbit_flicker.gif">
+</div>
+
+<figcaption>With "flicker" enabled</figcaption>
+</figure>
+
+<p>The experience of being involved with the product and not just its development is definitely very enjoyable, and gives me something to add to my list career options</p>
+
+<h2>Development</h2>
+
+<p>The interesting thing about being the developer on the tablet experience was that I knew everything I had to implement. Everything was well defined, because I was erm... the one who designed the product. I never really had it this clear cut, especially working at companies where there is some separation between product and development. And at larger sized companies (where I have mostly worked), this is almost always the case unfortunately.</p>
+
+<p>With that being said, developing a feature never really took that long, since I knew the business logic very well, so it was mostly just coding it. What did take time, was all the architectural stuff such as how/when to query for the new ad queue based on the current location.</p>
+
+<p>Luckily, Orbit has a partnership with Samsung for the early phase alpha and beta testing, so the tablet development was done on my favourite Android OS.</p>
+
+<p>It was good experience working on the Tablet UI, a lot more real-estate to work with. Apart from that it, was pretty much like any other Android project I have worked on (in terms of features and functionality). The more interesting pieces involved all the logistics around storing and streaming the advertisements on the tablets.</p>
+
+<p>To further complicate things, the ad queues were very volatile since the ads depend on parameters like time and location, so I needed to come with efficient and useful ways to cache ads from the queue and update the queue.</p>
+
+<p>Since a lot of what I did was under NDA I can't go into implementation details or show code. But below is a video showcasing some of the things I mentioned above.</p>
+
+<figure><div><iframe src="https://www.youtube.com/embed/Z_bPEmbXcuU" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>&nbsp;<figcaption> Unfortunately, the Android Studio screen recorder doesn't show touch point on the device.</figcaption></figure><p>‍</p>
+
+<h1>Conclusion</h1>
+
+<p>Orbit is still in the process of refining its business model and securing more funding from VCs. But the development for the core product is essentially done. The next things to tackle are scalability and refining our product based on feedback and analytics</p>

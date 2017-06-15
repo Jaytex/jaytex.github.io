@@ -1,0 +1,122 @@
+---
+layout: default
+modal-id: 5
+title: TabCab
+date: 2017-06-14
+img: tabcab_logo.png
+alt: image-alt
+project-date: December 2015
+category: Android Development
+---
+
+<p>I was contacted to help a prospective startup out of Brock-university to help build an MVP to help pitch their product.&nbsp;</p>
+
+<h1>About</h1>
+
+<p>TabCab is the first subscription based ride share application that allows the daily users of public transportation in heavily populated areas to pay a one time monthly fee for all of their transportation needs. Daily users can now get the incentives that they always wanted and deserved with our service. With TabCab, the more you purchase, the cheaper it gets!</p>
+
+<h1>My Contribution</h1>
+
+<h2>Solution </h2>
+
+<h3>Trade-offs</h3>
+
+<p>Since this was a low costing prototype, I was limited with how much time (~45 hours) I could spend on the app, meaning I had to analyze all the different trade-offs such as the app's design, quality, functionality, complexity, and efficiency.</p>
+
+<p>Luckily, for the design, I had a <a href="https://richardyangux.myportfolio.com/projects">great designer</a> I was working on this prototype with, and he exported any assets I required for the overall design of the app. He also came up with the UX/UI components for the app, so all I had to do was implement it accordingly.</p>
+
+<p>As for the quality of the app, this was not as important I figured since it was an MVP with the main purpose of showing what the overall app process and experience would be like. So I figured a few misaligned text or tabs won't be the worst thing to trade-off. Also, since Google's objects by default follow great practices, the app did not feel &nbsp;"off" at the end of it all, and it looked like some of the apps you would see on the Playstore.</p>
+
+<p>I decided to keep the complexity to a minimum since it was an MVP and is not expected to have all of the features implemented yet. </p>
+
+<p>I tried to have my code be as efficient as possible since this is important for any developer. But I also made sure efficiency did not take more time than it needed to.</p>
+
+<p>Finally functionality, I decided to devote most of my effort into make the prototype as functional as possible. I felt this would help TabCab showcase a lot of what they had to offer. This also meant I got to work on a variety of things for the prototype.</p>
+
+<h3>Things the app should be able to do</h3>
+
+<p>The functionalities I decided to implement should give an idea of what the app is about and one would go around using it in the future. The list of functionalities include&#58;</p>
+
+<ul>
+<li>Showing sign-in/sign-up options (with the ability to skip, for trial purposes)</li>
+<li>Having a map view showing current location</li>
+<li>Having the current location get updated in real-time</li>
+<li>Having the ability to search for near-by drivers</li>
+<li>Having the ability to schedule a ride</li>
+<li>Having the ability to select a destination from a variety of filters (recent ,favorites, &nbsp;nearby)</li>
+<li>Having the ability to cancel a requested ride</li>
+</ul>
+
+<h3>How I decided to go about adding the functionalities</h3>
+
+<p>For the authentication, and destination selections, these boiled down to being various activities connected via <a href="https&#58;//developer.android.com/reference/android/content/Intent.html">intents</a> and some fragments here and there.</p>
+
+<p>The map view would be implemented via the <a href="https&#58;//developers.google.com/maps/documentation/android-api/">Google Maps API for android</a>. (This was the backbone of &nbsp;the prototype).</p><p>For obtaining the current location, I used <a href="https&#58;//developer.android.com/training/location/index.html">Google Location Services</a>. </p>
+
+<p>In order to update the current location I would have to set certain parameters for the <a href="https&#58;//developer.android.com/reference/android/location/LocationManager.html">LocationManager</a> object.</p>
+
+<p>Searching for nearby drivers. This was the heart of the prototype. For larger scale applications like Uber or Lyft, there is a lot of backend/infrastructure needed for this functionality. Unfortunately, this project did not have the time or money required for that. However, I realized for demonstration purposes, devices that had the prototype installed would need to be fairly close to each other; this is where the <a href="https&#58;//developers.google.com/nearby/">Google Nearby API</a> came to the rescue! It allows for sending and receiving of data between devices that are in close proximity (~100ft radius).</p>
+
+<figure><div><iframe src="https&#58;//www.youtube.com/embed/hultDpBS22s" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>&nbsp;</figure>
+
+<p>For scheduling a ride, there will have to be other devices that are nearby (representing drivers). There will be a <a href="https&#58;//developer.android.com/reference/android/support/design/widget/FloatingActionButton.html">Floating Action Button (FAB)</a> that allows a user to request a ride if there is a driver, or search for one if there isn't &nbsp;(the searching was accomplished via the Nearby API by <a href="https&#58;//developers.google.com/nearby/messages/android/pub-sub">publishing and subscribing</a>)</p>
+
+<p>Cancelling a request was implemented through the same FAB used to request a ride, only this time it's job was to cancel any requested rides.</p>
+
+<p>Once I finished designing my solution for the app, all I had to do was start coding!</p>
+
+<h2>Implementation</h2>
+<p>Once I had the solution planned out, all that was left for me was to execute! The entire development for this project was done on <a style="line-height&#58; 1.5;" href="https&#58;//developer.android.com/studio/index.html">Android Studio</a>. The design based components were all tested via an emulator. For anything that was map related I resorted to testing things out with physical devices, as I had to move different devices around a lot for demonstration purposes.</p>
+
+<figure><div><img src="../img/portfolio/tabcab1.png"></div></figure>
+
+<p>Upon successful installation of the APK the, user can go through their app list and launch TabCab</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57942fbfd1a4c3a5793130b9_tabcab0.png" alt=""></div></figure>
+
+<p>Once the app launched, the user is greeted with the welcome screen in which they can sign in, sign up, or simply skip. These were all implemented via simple <a href="https&#58;//developer.android.com/guide/components/activities.html">Activities</a> that were connected via Intents.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57944a71e18c36c079d128fe_tabcab2.png"></div></figure><p>The user simply types in there user name and password and signup.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57944aa60ad17d3c2b64f6df_tabcab3.png"></div></figure><p>There is a menu the user can choose from. This was implemented via a <a href="https&#58;//developer.android.com/reference/android/app/FragmentManager.html">FragmentManager</a> and a <a href="https&#58;//developer.android.com/reference/android/support/v4/widget/DrawerLayout.html">DrawerLayout</a>.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57944f3de18c36c079d12bb5_tabcab4.png" alt=""></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57944d27e18c36c079d12ad9_tabcabcode0.PNG"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57944d38c36cd0e74e2d27f0_tabcabcode1.PNG"></div></figure>
+
+<p>Now for the more interesting stuff... </p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57944f48a55e17ca4ee6ac43_tabcab5.png" alt=""></div></figure><p>The map was under main, and was where all the aforementioned functionalities lied.</p>
+
+<p>The devices I tested the app on were <a href="https&#58;//en.wikipedia.org/wiki/Nexus_5">Nexus 5</a> devices. The have good location sensors, and made testing the prototype a lot easier. Some other devices require you to calibrate your exact location, which leads to other complications.</p><p>On the bottom right corner is the FAB used to request a ride.</p>
+
+<p>If there is no driver around, it will begin the publishing and subscribing to look for nearby devices.</p><p>For efficiency purposes, I had the map related work run on a separate thread by using a <a href="https&#58;//developer.android.com/reference/java/lang/Runnable.html">Runnable</a> object. This way the UI thread doesn't have to hang or be slow.</p>
+
+<p>To be able to detect if there were any other drivers nearby, I had a <a href="https&#58;//developer.android.com/reference/java/util/HashMap.html">HashMap</a> that stored a (Email, Position) pair for each &nbsp;each nearby device. Anytime a device successfully published and another one subscribed, it added that device to this data structure.</p>
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945316e18c36c079d13018_tabcabcode4.PNG"></div><figcaption>This object was useful for looking up where other devices' markers should be drawn on the map.</figcaption></figure>
+
+<p>Once the map has been initialized, it also publishes and subscribes in case there are already devices nearby with the app open. This way, they can show up on other devices and get other devices show up on the map.</p>
+
+<p>If the user clicks the FAB when there are no devices nearby, they are told that the app is searching for drivers, and that's when the app tries publishing and subscribing again.</p><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945516412fc21f2b661755_tabcab6.png" alt=""></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945546a55e17ca4ee6af03_tabcab7.png" alt=""></div><figcaption>publishing and subscribing</figcaption></figure>
+
+<p>After the devices has published and subscribed, if there are nearby devices, they show up on the map!</p><figure class="w-richtext-align-fullwidth" style="max-width&#58; 30%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="30%"><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945637c36cd0e74e2d2cb7_tabcab8.png"></div></figure><p>The marker for a driver is different. Also, if you click on it, you can see the email of the associated device, to ensure it's the right one.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/579457c5a55e17ca4ee6b072_tabcab9.png"></div><figcaption>The "******"s are only for this. The actual prototype doesn't show it</figcaption></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945190a55e17ca4ee6ae1c_tabcabcode2.PNG"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/5794519ae18c36c079d12f12_tabcabcode3.PNG"></div></figure>
+
+<p>The publish and subscribe methods follow the <a href="https&#58;//developers.google.com/nearby/messages/android/pub-sub">nearby tutorial</a> for the most part. The main exception is in subscribing. The adding of other (Email, Location) pairs was handled in the subscribe's <em><strong>onFound()</strong></em> &nbsp;method. It utilizes the <a href="https&#58;//developer.android.com/reference/android/app/Activity.html#runOnUiThread(java.lang.Runnable)">runOnUiThread</a> method to display the new marker on the map.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945a21e18c36c079d13283_tabcabcode5.PNG"></div></figure><p>The rest of the app was very similar to the the pre-map stuff and was just a bunch of activities with <a href="https&#58;//developer.android.com/guide/topics/ui/layout/listview.html">ListViews</a> and <a href="https&#58;//developer.android.com/reference/android/support/v4/view/ViewPager.html">ViewPagers</a>&nbsp;select items from.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945bb70ad17d3c2b6504bc_tabcab10.png" alt=""></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945bcbd1a4c3a5793148a8_tabcab11.png" alt=""></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945cdae18c36c079d134dc_tabcabcode6.PNG"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945ceb412fc21f2b661bd0_tabcabcode7.PNG"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945d0de18c36c079d134e2_tabcabcode8.PNG"></div></figure><p>Once a ride has been requested the user is notified. Then if they wish, they can cancel the request.</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945d8ca55e17ca4ee6b9ad_tabcab12.png"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945da6e18c36c079d13518_tabcab13.png"></div></figure><p>And that pretty much sums up the development for the prototype!</p>
+
+<h1>Conclusion</h1>
+
+<p>I found this project very interesting. It was one of my first serious freelance work, and I had time constraints that I had to work with and milestones that needed to be met. It also opened up my interest in helping prospective startups build their prototypes to showcase at pitch competitions or sometimes just to get user feedback.</p>
+
+<p>The prototype helped them raise <strong>$25k</strong> in funding and have started product development already! So I'm glad I could have helped out! I'll be sure to post a link to their landing/home page once it's out.</p>
+
+<p>It was also nice finishing an app and handing it off to a client; it was a very rewarding feeling!</p>
+
+<p>Also thanks to Nearby, I was able to come up with something fairly quickly that demonstrated the general functionality and experience of the app. I hope to work on other cool projects that uses this technology!</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945f9aa55e17ca4ee6bbbb_nearby.jpg"></div></figure>

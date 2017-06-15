@@ -1,0 +1,50 @@
+---
+layout: default
+modal-id: 2
+title: Soundcloud SDK Integration for Mixmax
+date: 2017-06-14
+repo: Repo
+repo_link: https://github.com/Jaytex/soundcloudmixmaxapi
+img: soundcloud_mix_max.png
+alt: image-alt
+project-date: May 2016
+category: Web Development
+
+---
+
+<p>I was interviewing with Mixmax and was told to make an SDK Integration for their chrome extension. The inspiration for integrating this search feature comes from the fact that I like sharing music I listen to with my friends, so I decided it might be a neat feature to have as a search command in an email!</p>
+
+<h3>The way it works</h3>
+
+<p>Assuming the <a data-rt-link-type="external" href="https://chrome.google.com/webstore/detail/mixmax-email-tracking-tem/ocpljaamllnldhepankaeljmeeeghnid">Mixmax chrome extension</a> is installed, one can add custom integration. The link to this integration and how to install it can be found on my <a data-rt-link-type="external" href="https://github.com/Jaytex/soundcloudmixmaxapi">Github for this project</a>.</p>
+
+<p>The user then can start by typing /soundcloud into their email body as follows. Mixmax's neat autocomplete feature let's you select the feature you want to use once you have the least non-ambiguous prefix for the feature.</p>
+
+<figure>
+<div>
+<img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fae2bc36943ed2cc290e1_souncloudmm1.png">
+</div>
+<figcaption>Selecting the soundcloud search feature</figcaption>
+</figure>
+
+<p>Once you've selected to use the Souncloud search feature, you can simple type the title of your desired Soundcloud track. &nbsp;You can also try searching by artist/uploader &nbsp;(<em>this is dependent on how the uploader of the track named their title, some include their name as well, or the original producer, or neither!</em>) </p>
+
+<p>In the example I want to search for Monstercat's mix 19 on Soundcloud (Great mix btw!). So I go ahead and just types /soundcloud Monstercat 019. A drop down with the top 10 results fetched by the Soundcloud API will pop up. &nbsp;In this case it was the first result so I just selected that! In other cases it might not be (in case I just typed 'Monstercat' alone, I might have to scroll down till I find 019)</p>
+<figure><div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fafad337a79e75e961240_souncloudmm2.png"></div>
+<figcaption>List of relevant results</figcaption></figure>
+
+<h3>The Result</h3><p>Once the desired track has been selected &nbsp;it'll be embedded to the email body with the artwork, title and the uploader</p>
+
+<figure>
+<div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fb27aeee2a4082db724f1_souncloudmm3.png"></div></figure>
+
+<p>After that the recipient simply clicks on the link in their email and it will take them to track's page on Souncloud!</p>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fb494e9a4e4fd0e2d14b3_souncloudmm4.png"></div>
+
+<figcaption>Email received</figcaption></figure>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fb4aaa38f95ac5e9b38ba_souncloudmm5.png"></div>
+<figcaption>Track page on Soundcloud</figcaption></figure>
+
+<p>If you enjoyed this, then checkout my Udacity search integration for Mixmax</p>

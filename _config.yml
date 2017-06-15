@@ -1,1 +1,78 @@
-theme: jekyll-theme-midnight
+# Site settings
+title: Jay
+url: https://jaytex.github.io
+description: "Jay Bamimore's Website"
+keywords: "jay bamimore, jaytex, uwaterloo, android"
+
+meta_author: Bamimore Jay
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Dynamic Text on the Header #
+dynamic-typing: True
+shuffle: True # Shuffle the lines.
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 7
+start-delay: 200
+delete-delay: 1500
+lines: # You can add HTML Tags in the Text
+  - text: "Hello World!"
+  - text: "!مرحبا بالعالم"
+  - text: "こんにちは世界!"
+  - text: "안녕하세요!"
+
+background-img: "../img/background.jpg"
+me-img: "https://github.com/Jaytex.png"
+
+# Books, the ISBN could also be a AISN since this hooks to Amazon anyway
+books:
+  - title: "A brief history of time"
+    isbn: 0553380168
+  - title: Nikola Tesla
+    isbn: B00CATSONE
+  - title: "One Piece Vol. 77"
+    isbn: 1421585146
+  - title: "Digital Fortress"
+    isbn: 0312944926
+  - title: "Surely, you're joking Mr. Feynman"
+    isbn: 0393316041
+  - title: "The art of war"
+    isbn: 0486425576
+# Footer settings
+footer:
+  copyright: Jay Bamimore
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/jaybamimore/
+  - title: bitbucket
+    url: http://bitbucket.org/jaybamimore
+  - title: github
+    url: http://github.com/jaytex
+
+# Build settings
+markdown: kramdown
+permalink: pretty

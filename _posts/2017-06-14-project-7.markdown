@@ -1,0 +1,44 @@
+---
+layout: default
+modal-id: 7
+title: Genysis
+date: 2017-06-14
+img: genysis_logo_alt.jpeg
+alt: image-alt
+project-date: May 2015
+category: Product and Development
+---
+
+<p>I attended <a href="http://hackinghealth.ca/">Hacking Health</a> in Fall 2016 with two of my friends.</p>
+
+<p> We were all in different programs (Computer Science, Actuarial Science, and Health Studies). We wanted to try something a bit different and out of our usual routine, so we thought this was a good opportunity for us. Little did we know that we were going to end up placing first in the hackathon and winning over <strong>$30,000</strong> worth of services and constulting! You can find a list of the awards we won, and a video of me sharing my experience over <a href="https://www.opencityinc.com/post-hackathon-commercialisation/#.WT9n-xMrL-Z" data-rt-link-type="external">here</a>.</p>
+
+<h1>About</h1>
+<p>Genysis is an online service we created during the hackathon to help provide communities with a platform in which people in need for help, and people willing to volunteer their time to help can establish a communication channel. With a service like this, a lot of issues such as aging at home, cognitive health, and loneliness can be solved. It even provides a good source of volunteering hours and experience for they people volunteering and we feel it help build a richer community.</p>
+
+<h1>My Role</h1>
+
+<p>Being the person in Computer Science, my job mostly involved creating the landing page for such a service, and a custom dashboard that is unique to each volunteer or person seeking help. </p>
+
+<p>I was also in charge of coming up with the user experience of such a service, so I got to be a bit of a unicorn during the hackathon.</p>
+
+<h2>Product </h2>
+
+<p>Most of my contribution and work was focused on the designing of the Dashboard, as I felt this is were our product had the most value. Below is a video showcasing the user flow </p><figure><div><iframe src="https://www.youtube.com/embed/ySblJC3tEhg" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>&nbsp;</figure>
+
+<h2>Development</h2>
+
+<p>The development of the content in the demo above happened over the span of 48 hours (I did take a 5 hour "nap"). The development work was fairly straight forward, it was done using the <a href="http://mean.io/" data-rt-link-type="external">MEAN stack</a>. The dashboard was <a href="https://github.com/akveo/blur-admin" data-rt-link-type="external">based of this wonderful template</a>, so that saved me quite a bit of development time, and could focus on some other portions. Below is a list of tools and frameworks I used to complete this project&#58;</p>
+<ul>
+<li data-new-link="true"><a href="http://leafletjs.com/" data-rt-link-type="external">Leaflet.js</a></li>
+<li data-new-link="true"><a href="https://webflow.com/" data-rt-link-type="external">Webflow</a></li>
+<li>M, A, N from the <a href="http://mean.io/" data-rt-link-type="external">MEAN stack</a></li>
+</ul>
+
+<p data-new-link="true"><a href="https://genysisdashboard.herokuapp.com/#/dashboard" data-rt-link-type="external">Here</a> is a live demo of the dashboard on heroku.</p>
+
+<h1>Conclusion</h1>
+
+<p>It was very rewarding to have the 48 hours of hacking pay off! And it further showed me that by have a multidisciplinary team, a lot of interesting problems can be solved. I would not have known what the exact pain points in the volunteering community would have been if I didn't collaborate with my friend in Health Studies.</p>
+
+<p>My two friends are currently taking things further with this project and are trying to get this idea integrated in a community and hopefully scale up from there!</p>

@@ -1,0 +1,87 @@
+---
+layout: default
+modal-id: 3
+title: 3D Tetris
+date: 2017-06-14
+img: tetris_logo.png
+alt: image-alt
+project-date: May 2015
+category: Game Development
+---
+
+<p>For my computer&nbsp;<a href="https://www.student.cs.uwaterloo.ca/~cs488/">graphics course @UW</a>&nbsp; I had to develop the graphics engine for a 3D Tetris game.</p>
+
+The main objective for this project was to be able to draw the cubes, and utilize the shaders for a variety of features (discussed below).
+
+<p><em><strong>Disclaimer</strong>&#58; I'm bad at Tetris, so please don't get frustrated by the gameplay in the GIFs... that was even me trying to be okay.</em></p>
+
+<figure>
+<div><img src="../img/portfolio/tetris1.gif"></div><figcaption> I SUCK &nbsp;at Tetris &#58;(</figcaption></figure>
+
+<h1>Features</h1>
+<p>There were a list of graphics that needed to be added to the game, they were (in no particular order):</p>
+<ul>
+<li>Wireframe (see only the outlines of the cubes)</li>
+<li>Have pieces fall at different speeds</li>
+<li>Rotation in different axis</li>
+<li>Gravity ( persistent rotation)</li>
+<li>Multicolored tetrominoes </li>
+<li>Extra piece (hence the big J)</li>
+<li>Combination of features (e.g. Wireframe + multicolor)</li>
+</ul>
+
+<h3>Wireframe</h3>
+<figure>
+<div><img src="../img/portfolio/tetris2.gif"></div></figure>
+
+<p>In this mode, everything gets redrawn showing only the vertices and the lines connecting each of them.</p><p>This feature allows us to see how our cubes were implemented.</p>
+<p>It could be activated by pressing the 'W' key on the keyboard, or selecting Wireframe from the Draw Mode drop down menu.</p>
+<h3>Speed</h3>
+<figure>
+<div><img src="../img/portfolio/tetris3.gif"></div><figcaption>Wow, I actually cleared a line</figcaption></figure>
+
+<p>With this option the player can choose to play the game at various speeds, with 3 being the slowest (default), &nbsp;2 being medium, and 1 being the fastest.</p>
+
+<p>Again, the player can choose the speeds by pressing the '1', '2', '3' keys on the keyboard, or selecting 'Fast', 'Medium', 'Slow' from the drop down menu.</p>
+
+<h3>Rotation + Gravity</h3>
+
+<figure><div><img src="../img/portfolio/tetris4.gif"></div><figcaption>Long GIF</figcaption></figure>
+
+<figure><div><img src="../img/portfolio/tetris5.gif"></div></figure>
+
+<p>This allows players to rotate the game's world in either the X,Y, or Z axis.</p>
+
+<p>To rotate about the X axis, the user has to click on the left mouse button and move leftwards for clockwise rotation and rightwards for counterclockwise rotation (about the X axis)</p>
+
+<p>To rotate about the Y axis, the user has to click on the right mouse button and move leftwards for clockwise rotation and rightwards for counterclockwise rotation (about the Y axis)</p>
+
+<p>To rotate about the Z axis, the user has to click on the middle mouse button and move leftwards for clockwise rotation and rightwards for counterclockwise rotation (about the Z axis)</p>
+
+<p>If the mouse is dragged out to a certain direction, and the mouse is still moving after the button clicked has been released, the world will keep on rotating in that direction till the player either changes the rotation or resets.</p><p>This allows for a persistent rotation of the game's world.</p>
+
+<h3>Multicolor</h3>
+
+<figure><div><img src="../img/portfolio/tetris6.gif"></div></figure>
+
+<p>This feature allows the tetriminoes to be differently colored.</p>
+
+<p>The effects of this are better observed at various angles. The effects are also observable in the Wireframe mode.</p><p>To achieve this, the player can either press 'M' on the keyboard, or select 'Multicolor' from the Draw Mode drop down menu.</p>
+
+<h3>Extra Piece</h3>
+
+<p>I had the option of adding an extra piece, so I went ahead and added a 'J' into the piece pool. Playing with this piece has proven to be very annoying (even with better players), as it takes up a lot of real estate and is oddly shaped for this kind of game. The main (only) reason I added it was because it's my name &#58;) </p>
+
+<figure><div><img src="../img/portfolio/tetris7.png"></div><figcaption>Oh no! Not J!</figcaption></figure>
+
+<h3>Combination of features</h3>
+
+<figure><div><img src="../img/portfolio/tetris8.gif"></div></figure>
+
+<p>Any combination of features can be used as long as they're not contradictory (can't have pieces falling slow and fast simultaneously or world rotating both CW and CCW).</p>
+
+<p>Some combinations make it very challenging to even clear a single line (I even tested this on a Tetris addict!)</p><h1>Conclusion</h1>
+
+<p>I had a lot of fun building the graphics engine for this game, and it was my first time working with <a data-rt-link-type="external" href="https://www.opengl.org/">OpenGL</a>&nbsp; and <a data-rt-link-type="external" href="https://www.opengl.org/documentation/glsl/">GLSL</a> &nbsp;on that level. The project didn't focus too much on the game logic (I have <a data-rt-link-type="external" href="https://github.com/Jaytex/Quadris">another project</a>, a 2D Tetris game, where I developed the gameplay logic for a Tetris-like game). </p>
+
+<p>In the future I might extend this to merge the 3D &nbsp;graphics engine of this project with the scoring and extra gameplay logic of the 2D Tetris project. A more rewarding extension might be to make it cross-platform and not Linux only.</p>

@@ -1,0 +1,154 @@
+---
+layout: default
+modal-id: 4
+title: Jaytracer
+date: 2017-06-14
+img: jaytracer_logo.png
+alt: image-alt
+project-date: July 2015
+category: Computer Graphics
+
+---
+
+<p>For my computer <a data-rt-link-type="external" href="https&#58;//www.student.cs.uwaterloo.ca/~cs488/">graphics course @UW</a>&nbsp; I wrote an extended Ray Tracer for my final project.</p>
+
+<p>There were a bunch of technical features I implemented, which are explained below! In on extending it even further and optimizing the current features</p>
+
+<p>The goal of this project was for me to learn more advanced ray tracing tech-niques and use the resulting ray tracer to render a variety of computer generatedimages</p>
+
+<h1>Objectives Tackled</h1>
+
+<h2>Mirror Reflection</h2>
+
+<p>Implemented mirror reflection to reflective objects . This type of reflection acts as a clear mirror would without any dust or glare</p>
+
+<h4>Technical Details</h4>
+
+<p>When a cast ray intersects with an object, the point of intersection is stored in an Intersection object to that point. The object has pointer to the material at that intersection and uses it to determine the reflectivity&nbsp;of the object.</p>
+
+<p>If any of the RGB components of the specular color is &gt; 0, then that means the object is reflective. Before computing the reflecting ray, a check is made to ensure the ray tracing algorithm is not passed the recursion depth. If it is, it stops, else, the reflection ray is computed with the origin being the intersection position, and the direction vector <strong><em>= (2*N* incident_dir)* N - incident_dir</em></strong></p>
+
+<h4>Resulting Image</h4>
+
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc1e8e9a4e4fd0e2d33b6_mirrorreflection.png"></div></figure><h2>Refraction and Transparency </h2><p>These were implemented by calculating a refractive ray once the incident cast ray hits a the surface a refractive material. The amount the refractive ray is perturbed with respect to in the incident cast ray is calculated by Snell's law and the material's refractive index .</p>
+
+<h4>Technical Details</h4>
+
+<p>‍When a cast ray intersects with an object, the point of intersection is stored in an Intersection object to that point. The object has pointer to the material at that intersection and uses it to determine the refractivity and transparency of the object.</p>
+
+<p>If the object has transparency $&gt;$ 0 then we are good to refract. Before computing the reflecting ray, a check is made to ensure the ray tracing algorithm is not passed the recursion depth. If it is, it stops, else, the refracted ray is computed with the origin being the intersection position, and the direction vector computed using <a data-rt-link-type="external" href="https&#58;//en.wikipedia.org/wiki/Snell%27s_law">Snell's law</a></p>
+
+<h4>Resulting Images</h4>
+
+<figure >
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc32ae9a4e4fd0e2d3ab2_refractionwater.png">
+</div>
+</figure>
+
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc351c36943ed2cc2e7a5_refractionglass.png"></div></figure>
+
+<h2>Additional Primitives</h2>
+<p>Implemented extra primitives which include a plane, cylinder, cone.</p>
+<p><strong>Images&#58; Primitives</strong></p>
+<ul>
+<li>‍Capsule&#58; Cylinder, Sphere</li>
+<li>‍Missile&#58; Cone, Cylinder</li>
+<li>Primitive Family&#58; Cone, Cube, Cylinder Sphere</li>
+</ul>
+
+<h4>Resulting Images</h4>
+
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc49ac36943ed2cc2ec6a_capsule.png"></div></figure>
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc4a6c36943ed2cc2ecbd_missile.png"></div></figure><figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc4afeee2a4082db75d85_primitivesRefl.png"></div>
+</figure>
+
+<h2>Glossy Reflection</h2>
+
+<p>Multiple reflection rays are calculated at the point of intersection of a glossy material and are randomly perturbed uniformly. The average of the colors of the sampled rays makes surface glossy.</p>
+
+<h4>Technical Details</h4>
+
+<p>‍When a cast ray intersects with an object, the point of intersection is stored in an Intersection object to that point. The object has pointer to the material at that intersection and uses it to determine the reflectivity of the object.</p>
+
+<p>If any of the RGB components of the specular color is &gt; 0, then that means the object is reflective. Before computing the reflecting ray, a check is made to ensure the ray tracing algorithm is not passed the recursion depth. If it is, it stops, else, for the number of glossy samples, the ray tracer casts multiple reflected rays all originating from the point of intersection. The direction of each ray is then perturbed using a random distribution.</p>
+<h4>Resulting Image</h4>
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc4d2eee2a4082db75d8d_glossyreflection.png"></div></figure>
+
+<h2>Bump Mapping</h2>
+
+<p>Surface normals displaced based on displacement value obtained from an indexed image file.</p>
+
+<h4>Technical Details</h4>
+<p>Bump maps are part of an objects material and are basically textures that are used to perturb the surface normals as opposed to colors. When the color at an intersection point is being computed, the material checks it it should set bump map and then perturbs the surface normal before coloring.</p>
+
+<p>The textures for the bumps are PNG images.</p>
+<h4>Resulting Image</h4>
+<figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc57a05b434380f1df311_moonBump.png"></div></figure>
+
+<h2>Texture Mapping</h2>
+
+<p>Similar to bump mapping. Texture sample received from image file using bi-linear interpolation.</p>
+
+<h4>Technical Details</h4>
+
+<p>Texture maps are part of a <strong><em>TextureMaterial</em></strong> object (which is a Material object) and uses UV mapping and techniques discussed in the Course Notes for <a data-rt-link-type="external" href="https&#58;//www.student.cs.uwaterloo.ca/~cs488/">CS488 @UW</a>&nbsp;. <em><strong>u,v</strong></em> coordinates are stored when calculating intersection points of the primitives and are then used to set the color of the intersection point based on the color at the indexed location on the texture.</p>
+
+<p>The textures used for the mappings are PNG images.</p>
+
+<h4>Resulting Images</h4><figure>
+<div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc641a38f95ac5e9b6ea8_moonTexture.png"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc64ba38f95ac5e9b6eac_motherEarthF.png"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc656337a79e75e966db8_motherEarth1.png"></div></figure>
+
+<h2>Depth of Field</h2>
+<p>Multiple rays used to give us the depth of field effect. Focal length and aperture are picked to determine how blurry the background is and which object is focused on .</p>
+
+<h4>Technical Details</h4>
+
+<p>Before casting a ray, we check to see that the aperture &gt; 0 and the depth of field samples &gt;1 if so, we set the casting ray to have its origin be the original eye point perturbed by some random amount * aperture in the y and x direction, and the ray direction to be the focal point - new eye point (where focal point = original eye point + focal length * dir, dir being the direction the ray is hitting a pixel).</p>
+
+<h4>Resulting Image</h4>
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc6bae9a4e4fd0e2d44a7_dof.png">
+</div>
+<figcaption>Transparent sphere in focus</figcaption>
+</figure>
+<h1>Other CGIs</h1>
+
+<p>Below are a some other images generated with the Jaytracer</p>
+
+<figure class="w-richtext-align-fullwidth" style="max-width&#58; 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc77ca38f95ac5e9b73c2_cgi0.png">
+</div>
+<figcaption>Texture mapping of Sun</figcaption>
+</figure>
+
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc785e9a4e4fd0e2d462b_cgi00.png">
+</div>
+<figcaption>Texture mapping of water on a plane, with hovering transparent sphere with the refractive index of glass
+</figcaption>
+</figure>
+<figure >
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fc791c36943ed2cc2fca5_cgi1.png"></div>
+<figcaption>Attempt at rendering the two star Dragon Ball using meshes for the stars</figcaption></figure>
+<figure>
+<div>
+<img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fbcd3a38f95ac5e9b4fb5_jaytracertn.png">
+</div>
+<figcaption>The Sun shining down on the Dragon Balls(<em>without stars</em>) on a plane. <em>All the objects are glossy</em>
+</figcaption>
+</figure>

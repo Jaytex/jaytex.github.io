@@ -1,0 +1,42 @@
+---
+layout: default
+modal-id: 1
+title: Udacity SDK Integration for Mixmax
+date: 2017-06-14
+img: udacity_mix_max.png
+repo: Repo
+repo_link: https://github.com/Jaytex/udacitymixmaxapi
+alt: image-alt
+project-date: May 2016
+category: Web Development
+---
+
+<p>The coding challenge I had done for Mixmax (Soundcloud SDK integration) was fun, and I thought I could make yet another search feature for something I tend to share with people (especially through email). So I decided to make a search feature for Udacity courses! I have taken a few courses on the website and have found them very useful for learning a variety of things in the field of Computer Science. They have courses on data science, machine learning, web development, Android development and many more! Check your their <a data-rt-link-type="external" href="https://www.udacity.com/courses/all">catalog</a>! They also offer <a data-rt-link-type="external" href="https://www.udacity.com/nanodegree">Nanodegrees</a>!</p>
+
+<h3>The way it works</h3>
+
+<p>Assuming &nbsp;he&nbsp;<a data-rt-link-type="external" href="https://chrome.google.com/webstore/detail/mixmax-email-tracking-tem/ocpljaamllnldhepankaeljmeeeghnid">Mixmax chrome extension</a>&nbsp;is installed, one can add custom integration. The link to this integration and how to install it can be found on my&nbsp;<a data-rt-link-type="external" href="https://github.com/Jaytex/udacitymixmaxapi">Github for this project</a>.</p>
+
+<p>The user then can start by typing /udacity&nbsp;into their email body as follows. Mixmax's neat autocomplete feature let's you select the feature you want to use once you have the least non-ambiguous prefix for the feature.</p>
+
+<figure><div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fba23a38f95ac5e9b4431_udacitymm1.png"></div><figcaption>Selecting the Udacity search feature</figcaption></figure>
+
+<p>Once you've selected to use the Udacity search feature, you can simple type the title of your desired Udacity course. &nbsp;</p><p>In the example I want to search for a Material Design course for someone developing an Android application. Say the person I am sharing this with is a colleague at work who does not want a basic course but rather or more detailed/advanced course teaching to a more experienced audience. I don't know what courses the have so I simply search 'android' &nbsp;by typing <strong>/udacity android. I then scroll through the list and find a course that sounds like what I need and is aimed at the right level!</strong></p>
+
+<figure><div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fbaa8eee2a4082db745d0_udacitymm2.png"></div><figcaption>Selecting desited course</figcaption></figure>
+
+<h3>The Result</h3>
+
+<p>Once the desired course has been selected &nbsp;it'll be embedded to the email body with the thumbnail and title.</p>
+
+<figure>
+
+<div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fbbe1c36943ed2cc2c6a4_udacitymm3.png"></div></figure>
+
+<p>After that the recipient simply clicks on the link in their email and it will take them to course's page on Udacity!</p>
+
+<figure><div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fbc0deee2a4082db74835_udacitymm4.png"></div></figure>
+
+<figure><div><img src="https://daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/578fbc2ba38f95ac5e9b4c0a_udacitymm5.png"></div></figure>
+
+<p>If you enjoyed this, then checkout my Souncloud search integration for Mixmax</p>

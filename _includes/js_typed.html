@@ -1,0 +1,17 @@
+<script src="{{ "/js/typed.js" }}"></script>
+<script type="text/javascript">
+  var greetings =  new Array();
+  {% for line in site.lines %}
+    greetings.push("{{ line.text }}");
+  {% endfor %}
+ 
+    $(".intro-text").typed({
+      strings: greetings,
+      typeSpeed: {{ site.type-speed }},
+      backDelay: {{ site.delete-delay }},
+      startDelay: {{ site.start-delay }},
+      loop: {{ site..loop }},
+      loopCount: {{ site.loop-count }},
+      cursorChar: "|"
+    });
+</script>

@@ -1,0 +1,25 @@
+<!-- Book Grid Section -->
+<section id="book">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Books</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <p> Some of the books I've really enjoyed reading! I hope to add to this list as I read more! </p>
+            <h5>&nbsp;</h5>
+            {% for book in site.books %}
+                <div class="col-sm-4 portfolio-item">
+                    <a href="https://www.amazon.com/o/ASIN/{{ book.isbn }}" class="portfolio-link" data-toggle="modal">
+                        <img src="http://images.amazon.com/images/P/{{ book.isbn }}.01.20TRZZZZ.jpg class="img-responsive" alt="{{ post.alt }}">
+                    </a>
+                    <p>{{ book.title }}</p>
+                    <h5>&nbsp;</h5>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
