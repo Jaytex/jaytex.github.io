@@ -1,26 +1,10 @@
 # Site settings
 title: Jay
-url: https://jaytex.github.io
+url: https://jaybamimore.com
 description: "Jay Bamimore's Website"
 keywords: "jay bamimore, jaytex, uwaterloo, android"
 
 meta_author: Bamimore Jay
-
-# Google webmaster tools
-google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:

@@ -3,7 +3,7 @@ layout: default
 modal-id: 7
 title: Genysis
 date: 2017-06-14
-img: genysis_logo_alt.jpeg
+img: genysis_logo.png
 alt: image-alt
 project-date: November 2016
 category: Product and Development

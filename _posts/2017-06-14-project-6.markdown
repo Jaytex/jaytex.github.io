@@ -9,7 +9,7 @@ project-date: May 2016
 category: Product and Development
 ---
 
-<p>I co-founded Orbit.co, along with <a data-rt-link-type="external" href="https://richardyangux.myportfolio.com/projects">Richard Yang</a> and a few other colleagues from the University of Waterloo, and within a year of starting it, we were able to make it to the final of the <a href="http://velocity.uwaterloo.ca/2016/11/announcing-the-velocity-fund-f16-25k-finalists/">Velocity 25k pitch competition </a>(didn't win tho ... ) . </p>
+<p>I co-founded Orbit.co, along with <a data-rt-link-type="external" href="https://richardyangux.myportfolio.com/projects">Richard Yang</a> and a few other colleagues from the University of Waterloo, and within a year of starting it, we were able to make it to the final of the <a href="http://velocity.uwaterloo.ca/2016/11/announcing-the-velocity-fund-f16-25k-finalists/">Velocity 25k pitch competition </a>(didn't win though ... ) . </p>
 
 <h1>About</h1>
 
@@ -17,6 +17,17 @@ category: Product and Development
 market to launch in.</p>
 
 <p>The ads are uploaded by people/businesses&nbsp;who sign onto our platform, and are viewed on tablets attached to the back of the seats by the passengers in the taxis. Our platform will contain an online portal where people can upload their ads, and choose certain parameters to associate with those ads (e.g time to display ad, locations to display ad in, we even allow weather!). These parameters can be fed back into our platform, allowing us to leverage Machine Learning and Data Science to make better suggestion on what combination of parameters will yield the maximum return on investment for our customers (i.e the people and businesses). </p>
+
+<figure>
+<div>
+<img src="../img/portfolio/orbit_explained.png">
+</div>
+
+<figcaption>High level overview of the Orbit architecture</figcaption>
+</figure>
+
+<h5>&nbsp;</h5>
+
 
 <p>Below I discuss my contributions to the company.</p>
 
