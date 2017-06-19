@@ -29,10 +29,11 @@ category: Product and Development
 <h2>Development</h2>
 
 <p>The development of the content in the demo above happened over the span of 48 hours (I did take a 5 hour "nap"). The development work was fairly straight forward, it was done using the <a href="http://mean.io/" data-rt-link-type="external">MEAN stack</a>. The dashboard was <a href="https://github.com/akveo/blur-admin" data-rt-link-type="external">based of this wonderful template</a>, so that saved me quite a bit of development time, and could focus on some other portions. Below is a list of tools and frameworks I used to complete this project&#58;</p>
+
 <ul>
 <li data-new-link="true"><a href="http://leafletjs.com/" data-rt-link-type="external">Leaflet.js</a></li>
 <li data-new-link="true"><a href="https://webflow.com/" data-rt-link-type="external">Webflow</a></li>
-<li>M, A, N from the <a href="http://mean.io/" data-rt-link-type="external">MEAN stack</a></li>
+<li data-new-link="true">M, A, N from the <a href="http://mean.io/" data-rt-link-type="external">MEAN stack</a></li>
 </ul>
 
 <p data-new-link="true"><a href="https://genysisdashboard.herokuapp.com/#/dashboard" data-rt-link-type="external">Here</a> is a live demo of the dashboard on heroku.</p>
