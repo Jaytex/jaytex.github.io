@@ -18,7 +18,7 @@ The main objective for this project was to be able to draw the cubes, and utiliz
 <figure>
 <div><img src="../img/portfolio/tetris1.gif"></div><figcaption> I SUCK &nbsp;at Tetris &#58;(</figcaption></figure>
 
-<h1>Features</h1>
+<h2>Features</h2>
 <p>There were a list of graphics that needed to be added to the game, they were (in no particular order):</p>
 <ul>
 <li>Wireframe (see only the outlines of the cubes)</li>
@@ -80,7 +80,9 @@ The main objective for this project was to be able to draw the cubes, and utiliz
 
 <p>Any combination of features can be used as long as they're not contradictory (can't have pieces falling slow and fast simultaneously or world rotating both CW and CCW).</p>
 
-<p>Some combinations make it very challenging to even clear a single line (I even tested this on a Tetris addict!)</p><h1>Conclusion</h1>
+<p>Some combinations make it very challenging to even clear a single line (I even tested this on a Tetris addict!)</p>
+
+<h2>Conclusion</h2>
 
 <p>I had a lot of fun building the graphics engine for this game, and it was my first time working with <a data-rt-link-type="external" href="https://www.opengl.org/">OpenGL</a>&nbsp; and <a data-rt-link-type="external" href="https://www.opengl.org/documentation/glsl/">GLSL</a> &nbsp;on that level. The project didn't focus too much on the game logic (I have <a data-rt-link-type="external" href="https://github.com/Jaytex/Quadris">another project</a>, a 2D Tetris game, where I developed the gameplay logic for a Tetris-like game). </p>
 

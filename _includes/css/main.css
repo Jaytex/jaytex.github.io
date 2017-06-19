@@ -452,13 +452,11 @@ footer .footer-below {
     text-align: left;
 }
 
-.portfolio-modal .modal-content h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.portfolio-modal .modal-content h2,
+.portfolio-modal .modal-content h3,
+.portfolio-modal .modal-content h6 {
     padding-top: 30px;
+    border-top:1px solid rgb(217, 217, 217);
 }
 
 .portfolio-modal .modal-content ul {

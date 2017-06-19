@@ -11,13 +11,13 @@ category: Android Development
 
 <p>I was contacted to help a prospective startup out of Brock-university to help build an MVP to help pitch their product.&nbsp;</p>
 
-<h1>About</h1>
+<h2>About</h2>
 
 <p>TabCab is the first subscription based ride share application that allows the daily users of public transportation in heavily populated areas to pay a one time monthly fee for all of their transportation needs. Daily users can now get the incentives that they always wanted and deserved with our service. With TabCab, the more you purchase, the cheaper it gets!</p>
 
 <h1>My Contribution</h1>
 
-<h2>Solution </h2>
+<h1>Solution </h1>
 
 <h3>Trade-offs</h3>
 
@@ -109,7 +109,7 @@ category: Android Development
 
 <figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945d8ca55e17ca4ee6b9ad_tabcab12.png"></div></figure><figure><div><img src="https&#58;//daks2k3a4ib2z.cloudfront.net/578f955905b434380f1d4aae/57945da6e18c36c079d13518_tabcab13.png"></div></figure><p>And that pretty much sums up the development for the prototype!</p>
 
-<h1>Conclusion</h1>
+<h2>Conclusion</h2>
 
 <p>I found this project very interesting. It was one of my first serious freelance work, and I had time constraints that I had to work with and milestones that needed to be met. It also opened up my interest in helping prospective startups build their prototypes to showcase at pitch competitions or sometimes just to get user feedback.</p>
 

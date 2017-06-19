@@ -11,7 +11,7 @@ category: Product and Development
 
 <p>I co-founded Orbit.co, along with <a data-rt-link-type="external" href="https://richardyangux.myportfolio.com/projects">Richard Yang</a> and a few other colleagues from the University of Waterloo, and within a year of starting it, we were able to make it to the final of the <a href="http://velocity.uwaterloo.ca/2016/11/announcing-the-velocity-fund-f16-25k-finalists/">Velocity 25k pitch competition </a>(didn't win though ... ) . </p>
 
-<h1>About</h1>
+<h2>About</h2>
 
 <p>Orbit aims to be an interactive advertising platform that allows taxi passengers to interact and engage with different forms of digital advertisement. It is based in South Korea, since our research showed that would be the best
 market to launch in.</p>
@@ -31,7 +31,7 @@ market to launch in.</p>
 
 <p>Below I discuss my contributions to the company.</p>
 
-<h1>My Role</h1>
+<h2>My Role</h2>
 
 <p>I was (one of) the CPO at Orbit. My main focus was on the tablets that were in the taxis, from the features we should implement (product), to how it queries our server and plays ads based on the parameters (development). I was the only developer on the tablet portion, however my work regarding to server side communication was made easy, thanks to the CTO (Tyler Zhang), who made nice RESTful APIs to query from.</p>
 
@@ -86,6 +86,6 @@ market to launch in.</p>
 
 <figure><div><iframe src="https://www.youtube.com/embed/Z_bPEmbXcuU" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>&nbsp;<figcaption> Unfortunately, the Android Studio screen recorder doesn't show touch point on the device.</figcaption></figure><p>‍</p>
 
-<h1>Conclusion</h1>
+<h2>Conclusion</h2>
 
 <p>Orbit is still in the process of refining its business model and securing more funding from VCs. But the development for the core product is essentially done. The next things to tackle are scalability and refining our product based on feedback and analytics</p>
